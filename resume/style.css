@@ -1,0 +1,160 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    color: white;
+    background: url('../assets/img/palcoscenico-480.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.navbar {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-name {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+.content {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+
+.education, .work, .skills, .languages {
+    border-radius: 8px;
+    border: 3px solid #ffffff; 
+    box-shadow: 5px 5px 10px #00000080;
+    padding: 25px;
+    margin-bottom: 3rem;
+    background: #ffffffd9; 
+    color: #000000;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+
+.resume-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.resume-link img {
+    width: 30px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.resume-link:hover img {
+    opacity: 0.8;
+}
+
+
+footer {
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-cpr {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 481px) and (max-width: 800px) {
+    body {
+        background: url('../assets/img/palcoscenico-800.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    .content {
+        padding: 140px 30px;
+    }
+    
+    .navbar {
+        padding: 15px 30px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1920px) {
+    body {
+        background: url('../assets/img/palcoscenico-1920.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    .content {
+        padding: 160px 60px;
+    }
+    
+    .navbar {
+        padding: 20px 50px;
+    }
+    
+    .footer {
+        max-width: 1200px;
+    }
+}
+
+
+
